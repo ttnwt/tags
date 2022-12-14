@@ -74,7 +74,8 @@ Course :
 <option value="ANSIBLE">ANSIBLE</option> 
 <option value="GRAFANA">GRAFANA</option> 
 <option value="PROMETHEUS">PROMETHEUS</option> 
-<option value="KUBENERTES">KUBENERTES</option>  
+<option value="KUBENERTES">KUBENERTES</option> 
+<option value="AWS">AWS</option>
 </select>  
 </div>  
 <div>  

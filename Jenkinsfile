@@ -2,13 +2,13 @@ pipeline {
     agent any
     stages {
         stage('continuous download') {
-            when {tag "v7.0"}
+            when {tag "release-*"}
             steps {
                 git branch: 'main', credentialsId: 'me', url: 'https://github.com/ttnwt/tags.git'
             }
         }
         stage('continuous build') {
-            when { tag "v7.0" }
+            when { tag "release-*" }
             steps {
                 sh 'mvn package'
             }
