@@ -8,7 +8,7 @@ pipeline {
             }
         }
         stage('continuous build') {
-            when {tag "v7.0"}
+            when { tag "v7.0" }
             steps {
                 sh 'mvn package'
             }
